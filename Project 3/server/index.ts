@@ -1,8 +1,6 @@
-import {
-  createHTTPServer,
-} from '@trpc/server/adapters/standalone';
+import { createHTTPServer } from '@trpc/server/adapters/standalone';
 import { z } from 'zod';
-import { publicProcedure, router } from './trpc';
+import { publicProcedure, router, protectedProcedure } from './trpc';
 import { createContext } from './context';
 import { TRPCError } from '@trpc/server';
 
@@ -11,7 +9,7 @@ const appRouter = router({
   hello: publicProcedure
     .input(z.string().nullish())
     .query((opts) => `hello ${opts.input ?? opts.ctx.user?.name ?? 'world'}`),
-  
+
   // checked in resolver
   secret: publicProcedure.query((opts) => {
     if (!opts.ctx.user) {
@@ -22,7 +20,21 @@ const appRouter = router({
     };
   }),
 
+  // this is accessible only to admins
+  secretAdmin: protectedProcedure.query((opts) => {
+    return {
+      secret: 'admin sauce 1',
+    };
+  }),
 
+  admin: router({
+    // this is accessible only to admins
+    secret: protectedProcedure.query((opts) => {
+      return {
+        secret: 'admin sauce 2',
+      };
+    }),
+  }),
 });
 
 export type AppRouter = typeof appRouter;

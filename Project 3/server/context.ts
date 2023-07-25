@@ -1,4 +1,3 @@
-import * as trpc from '@trpc/server';
 import { inferAsyncReturnType } from '@trpc/server';
 import * as trpcNext from '@trpc/server/adapters/next';
 
@@ -15,7 +14,7 @@ export async function createContext({
       //   const user = await decodeAndVerifyJwtToken(
       //     req.headers.authorization.split(' ')[1]
       //   );
-      const user = { id: 1, name: 'Tom' };
+      const user = { id: 1, name: 'Tom', isAdmin: true };
       return user;
     }
     return null;

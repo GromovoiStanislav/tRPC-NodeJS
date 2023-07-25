@@ -20,6 +20,8 @@ async function main() {
   console.log(await trpc.hello.query('Sam'));
   console.log(await trpc.hello.query());
   console.log(await trpc.secret.query());
+  console.log(await trpc.secretAdmin.query());
+  console.log(await trpc.admin.secret.query());
 }
 
 main().catch(console.error);
