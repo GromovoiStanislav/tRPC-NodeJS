@@ -1,0 +1,21 @@
+{
+  "name": "trpc-server-client",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "ts-node server",
+    "client": "ts-node client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/client": "^10.35.0",
+    "@trpc/server": "^10.35.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
