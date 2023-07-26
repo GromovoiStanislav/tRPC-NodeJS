@@ -11,6 +11,8 @@ interface ChatMessage {
 const messages: ChatMessage[] = [
   { user: 'user1', message: 'Hello' },
   { user: 'user2', message: 'Hi' },
+  { user: 'user3', message: 'How are you?' },
+  { user: 'user4', message: "I'm fine" },
 ];
 
 // created for each request
