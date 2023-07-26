@@ -3,7 +3,7 @@
 ### Runs the gRPC server
 
 ```
-npm run server
+npm start
 ```
 
 endpoints are now available via HTTP:
