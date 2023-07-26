@@ -5,3 +5,4 @@
 - 2 - Use Express adapter (TS)
 - 3 - Authorization (TS)
 - 4 - Use Express adapter (TS)
+- 5 - Use Fastify adapter (TS)
