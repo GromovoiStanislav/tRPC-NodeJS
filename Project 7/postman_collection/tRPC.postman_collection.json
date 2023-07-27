@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "21ae484d-179a-4db6-8d4d-7a011e0ec5de",
+		"name": "tRPC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "trpc/note.getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/trpc/note.getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trpc",
+						"note.getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trpc/note.getOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/trpc/note.getOne?input=\"64c2138cec51894ec0e3e25a\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trpc",
+						"note.getOne"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "\"64c2138cec51894ec0e3e25a\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trpc/note.create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Title 4\",\r\n    \"description\": \"description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trpc/note.create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trpc",
+						"note.create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trpc/note.delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"64c21309dbe01468fa677f45\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trpc/note.delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trpc",
+						"note.delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trpc/note.toggleDone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"64c2138cec51894ec0e3e25a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trpc/note.toggleDone",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trpc",
+						"note.toggleDone"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
