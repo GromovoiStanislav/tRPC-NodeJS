@@ -1,12 +1,12 @@
 ## simple example tRCP with ExpressJS (TS/JS)
 
-### Runs the gRPC server ts
+### Runs the tRPC server ts
 
 ```
 npm run server-ts
 ```
 
-### Runs the gRPC server js
+### Runs the tRPC server js
 
 ```
 npm run server-js

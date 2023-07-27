@@ -1,6 +1,6 @@
 ## Use Express adapter (TS)
 
-### Runs the gRPC server
+### Runs the tRPC server
 
 ```
 npm start
