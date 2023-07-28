@@ -1,0 +1,23 @@
+{
+  "name": "trpc-merge",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server:1": "ts-node server_1",
+    "server:2": "ts-node server_2",
+    "client:1": "ts-node client_1",
+    "client:2": "ts-node client_2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/client": "^10.35.0",
+    "@trpc/server": "^10.35.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}

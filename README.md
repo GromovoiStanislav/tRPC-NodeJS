@@ -12,3 +12,4 @@
 - 9 - Use Express adapter (TS)
 - 10 - Merging Routers with child routers (TS)
 - 11 - Merging Routers with t.mergeRouters (TS)
+- 12 - Authorization and Metadata (TS)
