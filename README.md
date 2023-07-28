@@ -11,3 +11,4 @@
 - 8 - Use tRPC with MongoDB and Express-client (TS)
 - 9 - Use Express adapter (TS)
 - 10 - Merging Routers with child routers (TS)
+- 11 - Merging Routers with t.mergeRouters (TS)
