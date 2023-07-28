@@ -9,3 +9,4 @@
 - 6 - tRPC server with Prisma (TS)
 - 7 - Use Express adapter with MongoDB (TS)
 - 8 - Use tRPC with MongoDB and Express-client (TS)
+- 9 - Use Express adapter (TS)
