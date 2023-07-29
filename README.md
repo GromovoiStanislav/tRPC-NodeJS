@@ -13,3 +13,4 @@
 - 10 - Merging Routers with child routers (TS)
 - 11 - Merging Routers with t.mergeRouters (TS)
 - 12 - Authorization and Metadata (TS)
+- 13 - Learn tRPC In 45 Minutes (TS)

@@ -1,0 +1,24 @@
+{
+  "name": "trpc-server-client",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "tsc && vite build",
+    "build": "vite preview",
+    "preview": "vite preview",
+    "client": "ts-node-esm src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/client": "^10.36.0",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "vite": "^4.4.7"
+  }
+}
