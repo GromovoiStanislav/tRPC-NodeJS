@@ -1,8 +1,10 @@
 import { createExpressMiddleware } from '@trpc/server/adapters/express';
+import { applyWSSHandler } from '@trpc/server/adapters/ws';
 import express from 'express';
 import cors from 'cors';
 import { mergedRouter } from './routers';
 import { createContext } from './context';
+import ws from 'ws';
 
 // export type definition of API
 export type AppRouter = typeof mergedRouter;
@@ -20,6 +22,12 @@ app.use(
 );
 
 const port = 3000;
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Express server listening at http://localhost:${port}`);
+});
+
+applyWSSHandler({
+  wss: new ws.Server({ server }),
+  router: mergedRouter,
+  createContext,
 });
