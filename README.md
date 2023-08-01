@@ -14,4 +14,5 @@
 - 11 - Merging Routers with t.mergeRouters (TS)
 - 12 - Authorization and Metadata (TS)
 - 13 - Learn tRPC In 45 Minutes (TS)
-- 14 - Use Express adapter (TS)
+- 14 - Use Express adapter +Authorization (TS)
+- 15 - Use Express adapter (TS)

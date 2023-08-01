@@ -1,4 +1,4 @@
-## Use Express adapter +Authorization (TS)
+## Use Express adapter (TS)
 
 ### Runs the tRPC server
 
