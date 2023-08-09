@@ -26,11 +26,13 @@ async function main() {
   myMap.set('b', 2);
   myMap.set('c', 3);
 
-  const jsonString = superjson.stringify({
+  const myData = {
     date: new Date(0),
     set: mySet,
     map: myMap,
-  });
+  };
+
+  let jsonString = superjson.stringify(myData);
   console.log(await trpc.superjson.query({ data: jsonString }));
   // {
   //   date: 1970-01-01T00:00:00.000Z,
@@ -38,12 +40,8 @@ async function main() {
   //   map: Map(3) { 'a' => 1, 'b' => 2, 'c' => 3 }
   // }
 
-  const json = JSON.stringify({
-    date: new Date(0),
-    set: mySet,
-    map: myMap,
-  });
-  console.log(await trpc.json.query({ data: json }));
+  jsonString = JSON.stringify(myData);
+  console.log(await trpc.json.query({ data: jsonString }));
   // { date: '1970-01-01T00:00:00.000Z', set: {}, map: {} }
 }
 
