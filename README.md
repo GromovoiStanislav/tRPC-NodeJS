@@ -18,3 +18,4 @@
 - 15 - Use Express adapter (TS)
 - 16 - tRPC server with Prisma (TS)
 - 17 - Data Transformers with superjson (TS)
+- 18 - Simple messenger. Minimum example of working with tRPC (TS)
