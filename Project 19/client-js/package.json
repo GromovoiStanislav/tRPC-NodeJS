@@ -1,0 +1,16 @@
+{
+  "name": "trpc-client",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "start:messenger": "node messenger"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/client": "^10.38.1"
+  }
+}
