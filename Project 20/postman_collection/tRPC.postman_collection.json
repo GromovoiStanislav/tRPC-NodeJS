@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "21ae484d-179a-4db6-8d4d-7a011e0ec5de",
+		"name": "tRPC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "trpc/user.getUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/trpc/user.getUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trpc",
+						"user.getUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trpc/user.getUserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/trpc/user.getUserById?input=\"8sbgxv\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trpc",
+						"user.getUserById"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "\"8sbgxv\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trpc/user.createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trpc/user.createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trpc",
+						"user.createUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

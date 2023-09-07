@@ -20,3 +20,4 @@
 - 17 - Data Transformers with superjson (TS)
 - 18 - Simple messenger. Minimum example of working with tRPC (TS/JS)
 - 19 - NestJS with tRPC example. Simple messenger (TS/JS)
+- 20 - Use Express adapter & Merging routers with child routers (TS)
